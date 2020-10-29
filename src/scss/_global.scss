@@ -36,3 +36,37 @@ button:focus,
 input:focus {
   outline: transparent;
 }
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  @include m900;
+}
+
+.btn {
+  background-color: #ff5441;
+  padding: 20px 75px;
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0px 0px 38px 0px rgba(212, 66, 50, .7);
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: .5px;
+  transition: all .5s;
+  @include m900;
+}
+
+.btn:hover {
+  background-color: #ec4b38;
+}
+
+.btn:active {
+  opacity: .8;
+  transform: scale(.9);
+}

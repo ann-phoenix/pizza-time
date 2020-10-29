@@ -1,1 +1,19 @@
 @import 'local-fonts';
+
+@font-face{
+	font-family: 'Montserrat', sans-serif;
+	src: url('../fonts/Montserrat-Black.woff2') format('woff2'),
+	url('../fonts/Montserrat-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face{
+	font-family: 'Roboto', sans-serif;
+	src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+	url('../fonts/Roboto-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
