@@ -30,6 +30,12 @@ h6 {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+ul,
+li,
+ol{
+  list-style: none;
 }
 
 button:focus,
