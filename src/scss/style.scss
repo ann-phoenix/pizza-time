@@ -129,7 +129,72 @@
 }
 
 //end intro
+//start menu
+.menu {
+	&__wrapper {
+		text-align: center;
+		margin-bottom: 85px;
+	}
 
+	&__title {
+		color: $yellow;
+		margin-bottom: 40px;
+	}
+
+	//menu__nav helps to hidden box-shadow
+	&__nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__nav-list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, .1);
+		border-radius: 25px;
+		overflow: hidden; //only with menu__nav
+	}
+
+	&__nav-btn {
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		border-right: 1px solid $gray;
+		display: inline-block;
+		background-color: transparent;
+		text-align: center;
+		color: $gray;
+		@include m900;
+		font-size: 18px;
+		line-height: 22px;
+		min-width: 150px;
+		padding: 15px;
+		transition: all .5s;
+	}
+
+	//active button stay black
+	&__nav-btn:not(.menu__nav-btn--active):hover {
+		background-color: $yellow;
+		color: #fff;
+		border-right: 1px solid $yellow;
+	}
+
+	&__nav-btn--active {
+		background-color: #000;
+		color: #fff;
+		border-right: 1px solid #000;
+	}
+
+	//remove border of the last button
+	&__nav-item:last-of-type .menu__nav-btn {
+		border-right: none;
+	}
+
+}
+
+
+//end menu
 
 
 

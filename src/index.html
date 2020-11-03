@@ -1,22 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
-@@include('components/_head.html')
+<html lang="ru"> @@include('components/_head.html')
 
-<body>
-  @@include('components/_header.html')
+<body> @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-<section class="intro">
-  <div class="container">
-    <p class="intro__info">от барселонских поваров</p>
-    <h1 class="intro__title">Вкусная пицца <br> в Москве</h1>
-    <div class="intro__button">
-      <button class="intro__btn btn" type="button">Выбрать</button>
+  <!--intro-->
+  <section class="intro page-section">
+    <div class="container">
+      <p class="intro__info">от барселонских поваров</p>
+      <h1 class="intro__title">Вкусная пицца <br> в Москве</h1>
+      <div class="intro__button">
+        <button class="intro__btn btn">Выбрать</button>
+      </div>
     </div>
-  </div>
-</section>
-  <!-- STOP WRITE CODE -->
-  @@include('components/_footer.html')
-  @@include('components/_scripts.html')
+  </section>
+  <!--menu-->
+  <section class="menu page-section">
+    <div class="container">
+      <div class="menu__wrapper">
+        <h2 class="title menu__title">Меню</h2>
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+              <button class="menu__nav-btn menu__nav-btn--active">все</button>
+            </li>
+            <li class="menu__nav-item">
+              <button class="menu__nav-btn">мясные</button>
+            </li>
+            <li class="menu__nav-item">
+              <button class="menu__nav-btn">грибные</button>
+            </li>
+            <li class="menu__nav-item"> 
+              <button class="menu__nav-btn">сырные</button> 
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- STOP WRITE CODE --> @@include('components/_footer.html') @@include('components/_scripts.html')
 </body>
 
 </html>

@@ -17,6 +17,9 @@
 }
 
 @media(max-width:820px) {
+	.page-section {
+		margin-bottom: 50px;
+	}
 
 	//header
 	.header {
@@ -49,9 +52,49 @@
 	.phone {
 		margin-left: auto;
 	}
+
+	//menu
+	.menu {
+		&__nav {
+			width: 500px;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+
+		&__nav-list {
+			flex-wrap: wrap;
+			width: 100%;
+			border-radius: 20px;
+		}
+
+		&__nav-item {
+			width: 50%;
+			flex-grow: 1; // button always will be 100% width even if the number of buttons is odd 
+		}
+
+		&__nav-btn {
+			min-width: 0;
+			width: 100%;
+			border-top: 1px solid $gray;
+		}
+
+		//remove border of first and second buttons
+		&__nav-item:nth-of-type(1) .menu__nav-btn,
+		&__nav-item:nth-of-type(2) .menu__nav-btn {
+			border-top: none;
+		}
+
+		//remove even button border
+		&__nav-item:nth-of-type(even) .menu__nav-btn {
+			border-right: none;
+		}
+	}
 }
 
 @media(max-width: 435px) {
+	.title {
+		font-size: 30px;
+	}
 
 	//header
 	.phone {
