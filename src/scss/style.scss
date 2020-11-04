@@ -312,7 +312,7 @@
 //start about
 .about {
 	position: relative;
-	background: linear-gradient(to top, rgba(43, 43, 43, 1) 0%, rgba(31, 31, 31, 6) 100%);
+	background: linear-gradient(to top, rgba(43, 43, 43, 1), rgba(31, 31, 31, 6));
 	min-height: 430px;
 
 	&:before {
@@ -410,7 +410,8 @@
 	&__item {
 		margin-bottom: 50px;
 	}
-	&__item:last-child{
+
+	&__item:last-child {
 		margin-bottom: 0;
 	}
 
@@ -457,8 +458,22 @@
 		opacity: .7;
 	}
 }
-//end contacts
 
+//end contacts
+//start footer
+.footer {
+	background: linear-gradient(to top, rgba(43, 43, 43, 1), rgba(31, 31, 31, 6));
+
+	&__info {
+		text-align: center;
+		color: $gray;
+		font-size: 18px;
+		line-height: 1.4;
+		padding: 29px 5px;
+	}
+}
+
+//end footer
 
 
 
