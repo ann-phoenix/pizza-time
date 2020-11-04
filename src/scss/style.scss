@@ -363,6 +363,101 @@
 }
 
 //end about
+//start contacts
+.contacts {
+	&__title {
+		text-align: center;
+		margin-bottom: 90px;
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__container:before {
+		content: '';
+		position: absolute;
+		background-image: url(../images/tomato.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+
+	&__start {
+		width: 50%;
+	}
+
+	&__map {
+		background-color: $gray;
+		height: 450px;
+		order: 1;
+	}
+
+	&__end {
+		padding-left: 30px;
+		width: 50%;
+	}
+
+	&__item {
+		margin-bottom: 50px;
+	}
+	&__item:last-child{
+		margin-bottom: 0;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+
+	&__descr,
+	&__phone {
+		@include r300;
+		font-size: 18px;
+		line-height: 1.2;
+	}
+
+	&__phone {
+		transition: all .5s;
+	}
+
+	&__phone:hover {
+		text-decoration: underline;
+		color: $yellow;
+	}
+}
+
+.socials {
+	display: flex;
+
+	&-item+&-item {
+		margin-left: 10px;
+	}
+
+	&__img {
+		transition: all .5s;
+	}
+
+	&__img:hover {
+		opacity: .7;
+	}
+
+	&__img:active {
+		transform: scale(.8);
+		opacity: .7;
+	}
+}
+//end contacts
 
 
 
