@@ -31,7 +31,6 @@
 	}
 
 	&__link {
-		@include m900;
 		font-size: 18px;
 		padding: 23px 30px;
 		position: relative;
@@ -67,6 +66,7 @@
 		border-radius: 50px;
 		transition: all .5s;
 		font-size: 18px;
+		display: inline-block;
 	}
 
 	&__item:hover {
@@ -474,6 +474,127 @@
 }
 
 //end footer
+//start modals
+.modal {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	overflow: auto; //scroll content
+	opacity: 0; //hide modal
+	visibility: hidden; //hide modal
+	pointer-events: none; //hide modal
+
+	//modal doesn't break, content scrolls including top(!)
+	&__wrapper {
+		display: table; //
+		height: 100%;
+		width: 100%;
+	}
+
+	//modal doesn't break, content scrolls including top(!)
+	&__inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__content {
+		max-width: 730px;
+		width: 100%;
+		background-color: #fff;
+		padding: 80px 30px;
+		border-radius: 20px;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	&__close {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		border: none;
+		width: 45px;
+		height: 45px;
+		background-color: transparent;
+		padding: 0;
+		cursor: pointer;
+		transition: all .5s;
+	}
+
+	&__close:active {
+		transform: scale(.8);
+	}
+
+	//make a cross
+	&__close:after,
+	&__close:before {
+		position: absolute;
+		content: '';
+		background-color: $gray;
+		height: 30px;
+		width: 3px;
+		border-radius: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: all .5s;
+	}
+
+	&__close:before {
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&__close:after {
+		transform: translateY(-50%) rotate(-45deg);
+	}
+
+	&__close:hover:after,
+	&__close:hover:before {
+		background-color: $yellow;
+	}
+
+	&__nav {
+		margin: 0 -30px 30px;
+	}
+
+	&__li {
+		font-size: 24px;
+		padding: 20px 5px;
+		transition: all .5s;
+	}
+
+	&__li:hover {
+		background-color: $yellow;
+	}
+
+	&__link {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.socials {
+		justify-content: center;
+	}
+
+	.phone {
+		margin-bottom: 40px;
+	}
+
+	.phone__item:hover {
+		border: 3px solid $yellow;
+	}
+}
+
+.modal--active{
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+//end modals
 
 
 
