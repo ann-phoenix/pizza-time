@@ -55,6 +55,10 @@ body {
   @include m900;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 .btn {
   background-color: #ff5441;
   padding: 20px 75px;

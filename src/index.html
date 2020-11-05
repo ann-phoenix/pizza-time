@@ -11,7 +11,7 @@
           <p class="intro__info">от барселонских поваров</p>
           <h1 class="intro__title">Вкусная пицца <br> в Москве</h1>
           <div class="intro__button">
-            <button class="intro__btn btn">Выбрать</button>
+            <button class="intro__btn btn" data-scroll-to="menu">Выбрать</button>
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -170,7 +170,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -237,7 +237,7 @@
                     <div class="product__price">
                       <span class="product__price-value">730 ₽</span>
                     </div>
-                    <button class="btn product__btn">Заказать</button>
+                    <button class="btn product__btn" data-modal="modal__order">Заказать</button>
                   </div>
                 </div>
               </div>
@@ -307,17 +307,17 @@
     <div class="modal__wrapper">
       <div class="modal__inner">
         <div class="modal__content">
-          <button class="modal__close"></button>
+          <button class="modal__close modal-close"></button>
           <nav class="modal__nav">
             <ul class="modal__ul">
               <li class="modal__li">
-                <a class="modal__link" href="#">Пицца</a>
+                <a class="modal__link modal-close" href="#" data-scroll-to="menu">Пицца</a>
               </li>
               <li class="modal__li">
-                <a class="modal__link" href="#">О нас</a>
+                <a class="modal__link modal-close" href="#" data-scroll-to="about">О нас</a>
               </li>
               <li class="modal__li">
-                <a class="modal__link" href="#">Контакты</a>
+                <a class="modal__link modal-close" href="#" data-scroll-to="contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -347,7 +347,7 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
     <div class="modal__wrapper">
       <div class="modal__inner">
         <div class="modal__content modal__order-content">
-          <button class="modal__close modal__order-close"></button>
+          <button class="modal__close modal__order-close modal-close"></button>
           <h2 class="modal__title title">Заполните форму</h2>
           <p class="modal__subtitle">Привезем горячую пиццу за час или бесплатно</p>
           <div class="modal__box">
@@ -378,7 +378,7 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
     <div class="modal__wrapper">
       <div class="modal__inner">
         <div class="modal__content">
-          <button class="modal__close"></button>
+          <button class="modal__close modal-close"></button>
           <h2 class="modal__title modal__success-title  title">Успешно отправлено</h2>
           <p class="modal__subtitle modal__success-subtitle">Мы уже начали готовить вашу пиццу</p>
         </div>
@@ -391,7 +391,7 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
     <div class="modal__wrapper">
       <div class="modal__inner">
         <div class="modal__content">
-          <button class="modal__close"></button>
+          <button class="modal__close modal-close"></button>
           <h2 class="modal__title modal__error-title title">Произошла ошибка</h2>
           <p class="modal__subtitle modal__error-subtitle">Пожалуйста, сделайте заказ по номеру <a class="modal__error-link" href="tel:79661789530">+7 (966) 178-95-30</a> </p>
         </div>

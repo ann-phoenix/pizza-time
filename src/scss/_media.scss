@@ -167,21 +167,6 @@
 		content: none;
 	}
 
-	//modals
-	.modal {
-		&__content {
-			max-width: 100%;
-			width: 100%;
-			padding: 100px 30px;
-			height: 100%;
-			border-radius: 0;
-		}
-
-		&__li {
-			font-size: 20px;
-		}
-	}
-
 }
 
 @media(max-width: 760px) {
@@ -269,6 +254,7 @@
 		&__error-title {
 			margin-bottom: 10px;
 		}
+
 		&__success-subtitle,
 		&__error-subtitle {
 			font-size: 18px;
@@ -295,7 +281,16 @@
 		&__size {
 			font-size: 15px;
 		}
-
+		&__content {
+			max-width: 100%;
+			width: 100%;
+			padding: 100px 30px;
+			height: 100%;
+			border-radius: 0;
+		}
+		&__li {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -339,20 +334,20 @@
 	}
 
 	//modals
-	.modal{
+	.modal {
 		&__content {
 			max-width: 100%;
 			height: 100%;
 			border-radius: 0;
 		}
-	
+
 		&__success-title,
 		&__error-title {
 			font-size: 21px;
 		}
 
 		&__success-subtitle,
-		&__error-subtitle{
+		&__error-subtitle {
 			font-size: 14px;
 		}
 	}
