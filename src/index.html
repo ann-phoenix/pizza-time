@@ -340,7 +340,39 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
         </div>
       </div>
     </div>
-  </div> @@include('components/_scripts.html')
+  </div>
+  <!--/modal_1-->
+  <!--modal_2-->
+  <div class="modal modal__order modal--active">
+    <div class="modal__wrapper">
+      <div class="modal__inner">
+        <div class="modal__content modal__order-content">
+          <button class="modal__close modal__order-close"></button>
+          <h2 class="modal__title title">Заполните форму</h2>
+          <p class="modal__subtitle">Привезем горячую пиццу за час или бесплатно</p>
+          <div class="modal__box">
+            <img class="modal__img" src="images/item-1.jpg" alt="">
+            <p class="modal__info">Пепперони 730 ₽</p>
+            <p class="modal__size">35 см</p>
+          </div>
+          <form class="modal__form">
+            <input type="hidden" name="пицца">
+            <input type="hidden" name="цена">
+            <input type="hidden" name="размер">
+            <input class="modal__input" type="text" name="имя" placeholder="Имя"required>
+            <input class="modal__input" type="text" name="телефон" placeholder="Телефон" required>
+            <input class="modal__input" type="text" name="адрес" placeholder="Адрес" required>
+            <select class="modal__select" name="оплата" id="">
+              <option value="оплата наличными">Оплата наличными</option>
+              <option value="оплата картой">Оплата картой</option>
+            </select>
+            <button class="btn modal__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/modal_2--> @@include('components/_scripts.html')
 </body>
 
 </html>

@@ -588,11 +588,86 @@
 	}
 }
 
-.modal--active{
+.modal--active {
 	visibility: visible;
 	opacity: 1;
 	pointer-events: auto;
 }
+
+//start modal_2
+.modal {
+	&__order-content{
+		padding: 50px 30px;
+	}
+	&__title {
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	&__subtitle {
+		text-align: center;
+		@include r300;
+		font-size: 24px;
+		line-height: 1.2;
+		max-width: 400px;
+    margin: 0 auto 40px;
+	}
+
+	&__box {
+		max-width: 300px;
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+
+	&__img {
+		width: 220px;
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		font-size: 22px;
+		margin-bottom: 6px;
+	}
+
+	&__size {
+		font-size: 16px;
+		color: $gray;
+	}
+	&__form{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 300px;
+	}
+	&__input,
+	&__select{
+		width: 100%;
+		padding: 20px 35px;
+		border: none;
+		border: 2px solid transparent;
+		border-radius: 50px;
+		background-color: rgb(247, 247, 247);
+		margin-bottom: 10px;
+	}
+	&__input::placeholder{
+		@include r300;
+		font-size: 16px;
+		line-height: 1.2;
+	}
+	&__input:focus,
+	&__select:focus{
+		border: 2px solid $yellow;
+	}
+	&__btn{
+		box-shadow: none;
+		background-color: $yellow;
+		width: 100%;
+		padding: 20px 35px;
+		border-radius: 50px;
+	}
+}
+
+
 
 //end modals
 

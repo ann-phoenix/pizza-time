@@ -168,7 +168,7 @@
 	}
 
 	//modals
-	.modal{
+	.modal {
 		&__content {
 			max-width: 100%;
 			width: 100%;
@@ -176,7 +176,8 @@
 			height: 100%;
 			border-radius: 0;
 		}
-		&__li{
+
+		&__li {
 			font-size: 20px;
 		}
 	}
@@ -251,6 +252,41 @@
 	.footer__info {
 		font-size: 16px;
 		padding: 19px 5px;
+	}
+
+	//modals
+	.modal {
+		&__order-content {
+			padding: 60px 20px;
+		}
+
+		&__order-close {
+			top: 15px;
+			right: 5px;
+		}
+
+		.title {
+			font-size: 25px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			max-width: 320px;
+			margin: 0 auto 25px;
+		}
+
+		&__box {
+			margin: 0 auto 20px;
+		}
+
+		&__info {
+			font-size: 18px;
+		}
+
+		&__size {
+			font-size: 15px;
+		}
+
 	}
 }
 
