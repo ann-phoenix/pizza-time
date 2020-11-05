@@ -274,7 +274,7 @@
               </div>
               <div class="contacts__item">
                 <h3 class="contacts__subtitle">Телефон</h3>
-                <a class="contacts__phone" href="tel:79661789530">+7(966) 178-95-30</a>
+                <a class="contacts__phone" href="tel:79661789530">+7 (966) 178-95-30</a>
               </div>
               <div class="contacts__item">
                 <h3 class="contacts__subtitle">Социальные сети</h3>
@@ -302,7 +302,7 @@
     </div> @@include('components/_footer.html')
   </div>
   <!--modals-->
-  <!--modal_1-->
+  <!--modal-->
   <div class="modal">
     <div class="modal__wrapper">
       <div class="modal__inner">
@@ -322,7 +322,7 @@
             </ul>
           </nav>
           <div class="phone">
-            <a class="phone__item" href="tel:79661789530">+7(966) 178-95-30</a>
+            <a class="phone__item" href="tel:79661789530">+7 (966) 178-95-30</a>
           </div>
           <ul class="socials">
             <li class="socials-item">
@@ -341,9 +341,9 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
       </div>
     </div>
   </div>
-  <!--/modal_1-->
-  <!--modal_2-->
-  <div class="modal modal__order modal--active">
+  <!--/modal-->
+  <!--modal__order-->
+  <div class="modal modal__order">
     <div class="modal__wrapper">
       <div class="modal__inner">
         <div class="modal__content modal__order-content">
@@ -359,7 +359,7 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
             <input type="hidden" name="пицца">
             <input type="hidden" name="цена">
             <input type="hidden" name="размер">
-            <input class="modal__input" type="text" name="имя" placeholder="Имя"required>
+            <input class="modal__input" type="text" name="имя" placeholder="Имя" required>
             <input class="modal__input" type="text" name="телефон" placeholder="Телефон" required>
             <input class="modal__input" type="text" name="адрес" placeholder="Адрес" required>
             <select class="modal__select" name="оплата" id="">
@@ -372,7 +372,35 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
       </div>
     </div>
   </div>
-  <!--/modal_2--> @@include('components/_scripts.html')
+  <!--/modal__order-->
+  <!--modal__success-->
+  <div class="modal modal__success">
+    <div class="modal__wrapper">
+      <div class="modal__inner">
+        <div class="modal__content">
+          <button class="modal__close"></button>
+          <h2 class="modal__title modal__success-title  title">Успешно отправлено</h2>
+          <p class="modal__subtitle modal__success-subtitle">Мы уже начали готовить вашу пиццу</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/modal__success-->
+  <!--modal__error-->
+  <div class="modal modal__error">
+    <div class="modal__wrapper">
+      <div class="modal__inner">
+        <div class="modal__content">
+          <button class="modal__close"></button>
+          <h2 class="modal__title modal__error-title title">Произошла ошибка</h2>
+          <p class="modal__subtitle modal__error-subtitle">Пожалуйста, сделайте заказ по номеру <a class="modal__error-link" href="tel:79661789530">+7 (966) 178-95-30</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/modal__error-->
+  <!--/modals-->
+  @@include('components/_scripts.html')
 </body>
 
 </html>
