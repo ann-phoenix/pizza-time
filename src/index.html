@@ -24,22 +24,22 @@
             <nav class="menu__nav">
               <ul class="menu__nav-list">
                 <li class="menu__nav-item">
-                  <button class="menu__nav-btn menu__nav-btn--active">все</button>
+                  <button type="button" class="menu__nav-btn" data-filter="all">все</button>
                 </li>
                 <li class="menu__nav-item">
-                  <button class="menu__nav-btn">мясные</button>
+                  <button type="button" class="menu__nav-btn" data-filter=".meat">мясные</button>
                 </li>
                 <li class="menu__nav-item">
-                  <button class="menu__nav-btn">грибные</button>
+                  <button type="button" class="menu__nav-btn" data-filter=".mushrooms">грибные</button>
                 </li>
                 <li class="menu__nav-item">
-                  <button class="menu__nav-btn">сырные</button>
+                  <button type="button" class="menu__nav-btn" data-filter=".cheese">сырные</button>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="menu__inner">
-            <div class="menu__item">
+            <div class="menu__item mix meat" data-order="1">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-1.jpg" alt="">
                 <div class="product__content">
@@ -61,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix cheese" data-order="2">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-2.jpg" alt="">
                 <div class="product__content">
@@ -84,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix mushrooms" data-order="3">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-3.jpg" alt="">
                 <div class="product__content">
@@ -106,7 +106,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix meat" data-order="4">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-4.jpg" alt="">
                 <div class="product__content">
@@ -129,7 +129,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix meat mushrooms" data-order="5">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-5.jpg" alt="">
                 <div class="product__content">
@@ -152,7 +152,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix meat" data-order="6">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-6.jpg" alt="">
                 <div class="product__content">
@@ -175,7 +175,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix meat" data-order="7">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-7.jpg" alt="">
                 <div class="product__content">
@@ -198,7 +198,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix cheese" data-order="8">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-8.jpg" alt="">
                 <div class="product__content">
@@ -220,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__item">
+            <div class="menu__item mix meat mushrooms" data-order="9">
               <div class="product menu__product">
                 <img class="product__img" src="images/item-9.jpg" alt="">
                 <div class="product__content">

@@ -110,7 +110,8 @@ gulp.task("script", function () {
 	return gulp
 		.src([
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
-			"node_modules/jquery/dist/jquery.js"
+			"node_modules/jquery/dist/jquery.js",
+			"node_modules/mixitup/dist/mixitup.js",
 		])
 		.pipe(size())
 		.pipe(babel())

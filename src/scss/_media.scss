@@ -7,7 +7,7 @@
 		}
 
 		&__item {
-			padding: 0 15px;
+			padding: 15px;
 		}
 	}
 
@@ -39,24 +39,14 @@
 		font-size: 15px;
 	}
 
+	.menu__item {
+		// width: 50%;
+		flex-basis: calc(50% - 20px);
+	}
+
 }
 
 @media(max-width: 1150px) {
-
-	//menu
-	.menu {
-		&__item {
-			width: 50%;
-		}
-
-		&__item:nth-of-type(even):before {
-			content: '';
-		}
-
-		&__item:nth-of-type(odd):before {
-			content: none;
-		}
-	}
 
 	//contacts
 	.contacts {
@@ -125,7 +115,7 @@
 		}
 
 		&__nav-item {
-			width: 50%;
+			flex-basis: calc(50% - 20px);
 			flex-grow: 1; // button always will be 100% width even if the number of buttons is odd 
 		}
 
@@ -172,21 +162,19 @@
 @media(max-width: 760px) {
 	.menu {
 		&__item {
-			width: 100%;
-			margin: 0 auto 30px;
+			flex-basis: 50%;
 		}
 
-		&__item:nth-of-type(even):before {
-			content: none;
+		&__inner{
+			margin: 0;
 		}
+
 
 		//make item not full screen width
 		&__product {
 			width: 350px;
 			max-width: 100%;
 			margin: 0 auto;
-			padding-bottom: 30px;
-			border-bottom: 2px solid $gray;
 		}
 
 		&__item:last-of-type .menu__product {
@@ -326,6 +314,11 @@
 	//menu
 	.product__btn {
 		padding: 15px 40px;
+	}
+
+	.menu__item{
+		padding: 10px;
+		max-width: 100%;
 	}
 
 	//contacts

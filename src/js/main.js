@@ -1,5 +1,9 @@
 $(function () {
 
+	//filters
+
+	var mixer = mixitup ('.menu__inner');
+
 	//header dark
 	var header = document.querySelector('.header');
 
@@ -54,7 +58,7 @@ $(function () {
 
 	//modals
 
-	var closesItemByClass = function (item, className) {
+	var closestItemByClass = function (item, className) {
 		var node = item;
 
 		while (node) {
@@ -68,20 +72,6 @@ $(function () {
 
 
 	//menu opens by span
-	var closesAttr = function (item, attr) {
-		var node = item;
-
-		while (node) {
-			var attrValue = node.getAttribute(attr);
-			if (attrValue) {
-				return attrValue;
-			}
-
-			node = node.parentElement;
-		}
-
-		return null;
-	};
 
 	var showModal = function (target) {
 		target.classList.add('modal--active');
@@ -119,11 +109,10 @@ $(function () {
 		var target = e.target;
 		if (target.classList.contains('modal-close') ||
 			target.classList.contains('modal__inner')) {
-			var modal = closesItemByClass(target, 'modal');
+			var modal = closestItemByClass(target, 'modal');
 
 			closeModal(modal);
 			toggleScroll();
 		}
 	});
-
 });
