@@ -1,6 +1,6 @@
 $(function () {
 
-	//filters
+	//filters https://www.kunkalabs.com/mixitup/
 
 	var mixer = mixitup('.menu__inner');
 
@@ -116,18 +116,26 @@ $(function () {
 		}
 	});
 
+	//change product size and price
 	var menuInner = document.querySelector('.menu__inner');
 
 	if (menuInner === null) {
 		return;
 	}
 
+	var updateProductPrice = function (product, price){
+		var productPrice = product.querySelector('.product__price-value');
+		productPrice.textContent = price;
+	};
+
 	var changeProductSize = function (target) {
 		var product = closestItemByClass(target, 'product');
 		var previousBtnActive = product.querySelector('.product__size.product__size--active');
+		var newPrice = target.getAttribute('data-product-size');
 
 		previousBtnActive.classList.remove('product__size--active');
 		target.classList.add('product__size--active');
+		updateProductPrice(product, newPrice);
 	};
 
 	menuInner.addEventListener('click', function (e) {
@@ -139,7 +147,7 @@ $(function () {
 		}
 	});
 
-	//yandex map
+	//yandex map https://yandex.ru/dev/maps/jsbox/?turbo=true
 	ymaps.ready(function () {
 		var myMap = new ymaps.Map('ymap', {
 				center: [55.937185, 37.497342],
