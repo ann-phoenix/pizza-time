@@ -193,3 +193,6 @@
 [1108/120105.919:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNEL32.DLL
 [1108/120105.919:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffffc9e0000 of 64 bytes failed: «апрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [1108/120105.919:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\WINDOWS\System32\KERNELBASE.dll
+[1108/163900.391:ERROR:directory_reader_win.cc(43)] FindFirstFile: —истеме не удаетс€ найти указанный путь. (0x3)
+[1108/192313.740:ERROR:directory_reader_win.cc(43)] FindFirstFile: —истеме не удаетс€ найти указанный путь. (0x3)
+[1108/211215.005:ERROR:directory_reader_win.cc(43)] FindFirstFile: —истеме не удаетс€ найти указанный путь. (0x3)

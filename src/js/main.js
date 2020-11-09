@@ -2,7 +2,7 @@ $(function () {
 
 	//filters
 
-	var mixer = mixitup ('.menu__inner');
+	var mixer = mixitup('.menu__inner');
 
 	//header dark
 	var header = document.querySelector('.header');
@@ -114,5 +114,54 @@ $(function () {
 			closeModal(modal);
 			toggleScroll();
 		}
+	});
+
+	var menuInner = document.querySelector('.menu__inner');
+
+	if (menuInner === null) {
+		return;
+	}
+
+	var changeProductSize = function (target) {
+		var product = closestItemByClass(target, 'product');
+		var previousBtnActive = product.querySelector('.product__size.product__size--active');
+
+		previousBtnActive.classList.remove('product__size--active');
+		target.classList.add('product__size--active');
+	};
+
+	menuInner.addEventListener('click', function (e) {
+		var target = e.target;
+
+		if (target.classList.contains('product__size')) {
+			e.preventDefault();
+			changeProductSize(target);
+		}
+	});
+
+	//yandex map
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('ymap', {
+				center: [55.937185, 37.497342],
+				zoom: 16
+			}, {
+				searchControlProvider: 'yandex#search'
+			}),
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				balloonContent: 'г. Долгопрудный, Новый бульвар, 21'
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'images/pizza-slice.svg',
+				iconImageSize: [40, 63],
+				iconImageOffset: [-19, -38]
+			}),
+
+			myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+				iconContent: '12'
+			});
+
+		myMap.geoObjects
+			.add(myPlacemark);
 	});
 });

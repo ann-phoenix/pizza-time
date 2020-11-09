@@ -9,7 +9,7 @@
       <section class="intro page-section">
         <div class="container">
           <p class="intro__info">от барселонских поваров</p>
-          <h1 class="intro__title">Вкусная пицца <br> в Москве</h1>
+          <h1 class="intro__title">Вкусная пицца <br> в Долгопрудном</h1>
           <div class="intro__button">
             <button class="intro__btn btn" data-scroll-to="menu">Выбрать</button>
           </div>
@@ -41,7 +41,7 @@
           <div class="menu__inner">
             <div class="menu__item mix meat" data-order="1">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-1.jpg" alt="">
+                <img src="images/item-1.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Пепперони</h3>
                   <p class="product__descr">Пикантная пепперони, сыр моцарелла, томатный соус, перец халапеньо</p>
@@ -63,7 +63,7 @@
             </div>
             <div class="menu__item mix cheese" data-order="2">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-2.jpg" alt="">
+                <img src="images/item-2.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Пять сыров</h3>
                   <p class="product__descr">Сыр моцарелла, сыр креметте, сливки, сыр с белой плесенью, сыр с голубой
@@ -86,7 +86,7 @@
             </div>
             <div class="menu__item mix mushrooms" data-order="3">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-3.jpg" alt="">
+                <img src="images/item-3.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Грибная</h3>
                   <p class="product__descr">Сливочный соус, сыр моцарелла, жареный лук, шампиньоны, лук зеленый.</p>
@@ -108,7 +108,7 @@
             </div>
             <div class="menu__item mix meat" data-order="4">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-4.jpg" alt="">
+                <img src="images/item-4.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Империя</h3>
                   <p class="product__descr">Томатный соус, сыр моцарелла, помидоры, колбаски охотничьи, маслины,
@@ -131,7 +131,7 @@
             </div>
             <div class="menu__item mix meat mushrooms" data-order="5">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-5.jpg" alt="">
+                <img src="images/item-5.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Жюльен</h3>
                   <p class="product__descr">Соус цезарь, сыр моцарелла, шампиньоны, лук красный маринованный, курица,
@@ -154,7 +154,7 @@
             </div>
             <div class="menu__item mix meat" data-order="6">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-6.jpg" alt="">
+                <img src="images/item-6.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Цезарь</h3>
                   <p class="product__descr">Соус цезарь, сыр моцарелла, салат айсберг, курица, помидоры черри, сыр
@@ -177,7 +177,7 @@
             </div>
             <div class="menu__item mix meat" data-order="7">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-7.jpg" alt="">
+                <img src="images/item-7.jpg" alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Деревенская</h3>
                   <p class="product__descr">Сливочный соус, сыр моцарелла, бекон, картофель жареный, яйцо перепелиное,
@@ -200,7 +200,7 @@
             </div>
             <div class="menu__item mix cheese" data-order="8">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-8.jpg" alt="">
+                <img src="images/item-8.jpg"  alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Маргарита</h3>
                   <p class="product__descr">Томатный соус, сыр моцарелла, сыр пармезан</p>
@@ -222,7 +222,7 @@
             </div>
             <div class="menu__item mix meat mushrooms" data-order="9">
               <div class="product menu__product">
-                <img class="product__img" src="images/item-9.jpg" alt="">
+                <img src="images/item-9.jpg"  alt="" class="product__img">
                 <div class="product__content">
                   <h3 class="product__title">Прошутто</h3>
                   <p class="product__descr">Томатный соус, сыр моцарелла, ветчина, помидоры, шампиньоны, орегано</p>
@@ -265,12 +265,12 @@
           <h2 class="title contacts__title">Контакты</h2>
           <div class="contacts__wrapper">
             <div class="contacts__start">
-              <div class="contacts__map"></div>
+              <div class="contacts__map" id="ymap"></div>
             </div>
             <div class="contacts__end">
               <div class="contacts__item">
                 <h3 class="contacts__subtitle">Адрес</h3>
-                <p class="contacts__descr">г. Москва, Новый бульвар, 21</p>
+                <p class="contacts__descr">г. Долгопрудный, Новый бульвар, 21</p>
               </div>
               <div class="contacts__item">
                 <h3 class="contacts__subtitle">Телефон</h3>
@@ -351,18 +351,21 @@ hc_ref=ARRk--2y8qH4FOs3jLqPUWC_GOTYdKGV_qzVthVSuC0kjt4dIxu-FlU9bXetOMycxyY&fref=
           <h2 class="modal__title title">Заполните форму</h2>
           <p class="modal__subtitle">Привезем горячую пиццу за час или бесплатно</p>
           <div class="modal__box">
-            <img class="modal__img" src="images/item-1.jpg" alt="">
-            <p class="modal__info">Пепперони 730 ₽</p>
+            <img src="images/item-1.jpg" class="modal__img" alt="">
+            <p class="modal__info">
+             <span class="order__product-title">Пепперони</span>
+             <span class="order__product-price">730 ₽</span>
+            </p>
             <p class="modal__size">35 см</p>
           </div>
           <form class="modal__form">
-            <input type="hidden" name="пицца">
-            <input type="hidden" name="цена">
-            <input type="hidden" name="размер">
+            <input class="order__info-title" type="hidden" name="пицца">
+            <input class="order__info-price" type="hidden" name="цена">
+            <input class="order__info-size" type="hidden" name="размер">
             <input class="modal__input" type="text" name="имя" placeholder="Имя" required>
             <input class="modal__input" type="text" name="телефон" placeholder="Телефон" required>
             <input class="modal__input" type="text" name="адрес" placeholder="Адрес" required>
-            <select class="modal__select" name="оплата" id="">
+            <select class="modal__select" name="оплата">
               <option value="оплата наличными">Оплата наличными</option>
               <option value="оплата картой">Оплата картой</option>
             </select>

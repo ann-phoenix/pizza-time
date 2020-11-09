@@ -160,12 +160,18 @@
 }
 
 @media(max-width: 760px) {
+
+	//intro 
+	.intro__title {
+		font-size: 45px;
+	}
+
 	.menu {
 		&__item {
 			flex-basis: 50%;
 		}
 
-		&__inner{
+		&__inner {
 			margin: 0;
 		}
 
@@ -269,6 +275,7 @@
 		&__size {
 			font-size: 15px;
 		}
+
 		&__content {
 			max-width: 100%;
 			width: 100%;
@@ -276,6 +283,7 @@
 			height: 100%;
 			border-radius: 0;
 		}
+
 		&__li {
 			font-size: 20px;
 		}
@@ -316,7 +324,7 @@
 		padding: 15px 40px;
 	}
 
-	.menu__item{
+	.menu__item {
 		padding: 10px;
 		max-width: 100%;
 	}
